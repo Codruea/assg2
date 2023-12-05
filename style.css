@@ -1,62 +1,64 @@
-/* Apply styles to the nav-bar class */
-.nav-bar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  /* Apply styles to the content class */
-  .content {
-    margin: 20px;
-  }
-  
-  /* Apply styles to the footer class */
-  .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Descendant selector: Apply styles to 'a' elements within the nav-bar class */
-  .nav-bar a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Child selector: Apply styles to 'li' elements that are direct children of the ul within the nav-bar class */
-  .nav-bar > ul > li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  /* Adjacent sibling selector: Apply styles to the content class that directly follows the nav-bar class */
-  .nav-bar + .content {
-    border-top: 1px solid #333;
-  }
-  
-  /* Descendant selector: Apply styles to 'p' elements within the content class */
-  .content p {
-    font-size: 16px;
-  }
-  
-  /* Descendant selector: Apply styles to 'p' elements within the footer class */
-  .footer p {
-    margin: 0;
-  }
-  
-  /* Additional styles for better visibility */
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  /* Style the links within the footer */
-  .footer a {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #e6eaf1;
+            color: #2c3e50;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        iframe,
+        .styled-div {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .styled-div {
+            height: 200px;
+            background-color: #f39c12;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid #d35400;
+            border-radius: 12px;
+        }
+
+        .highlighted-text {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: 0;
+            border-top: 2px solid #bdc3c7;
+        }
+
+        /* Combinator styles */
+
+        /* Descendant Selector */
+        .nav-bar ul li a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        /* Child Selector */
+        .content > h2 {
+            color: #27ae60;
+        }
+
+        /* Adjacent Sibling Selector */
+        .content + section > h2 {
+            color: #e74c3c;
+        }
